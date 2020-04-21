@@ -1,0 +1,42 @@
+// Question 1
+lst=[]
+n=3
+for i in range (0,n):
+  x=int(input("Nbr: "))
+  lst.append(x)
+print(lst)
+def maxi(lst):
+  m=max(lst)
+  return(m)
+print(maxi(lst))
+//Question 2
+lst=[] 
+n=int(input("Nbr of elements"))
+for i in range (0,n):
+  x=int(input("Nbr: "))
+  lst.append(x)
+print(lst)
+def summ(lst):
+  m=sum(lst)
+  return(m)
+print("Sum",summ(lst))
+def multiplay(lst):
+    res=1
+    for g in lst:
+        res=res*g
+    return res
+print("Multi",multiplay(lst))
+Even_Sum = 0
+Odd_Sum = 1
+p =len(lst)
+for j in range(p):
+    if(lst[j] % 2 == 0):
+        Even_Sum = Even_Sum+lst[j]
+    else:
+        Odd_Sum =Odd_Sum+*lst[j]
+
+print("Result : ",Odd_Sum+Even_Sum)
+//Question 3
+items=[n for n in input("List: ").split('-')]
+items.sort()
+print('-'.join(items))
